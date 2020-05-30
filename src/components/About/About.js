@@ -32,9 +32,16 @@ const About = () => {
             asperiores nihil?
           </p>
           <h3>Skills</h3>
-          <GitHub />
-          <LinkedIn />
-          <Description />
+
+          <a href='https://github.com/ayndecastro'>
+            <GitHub />
+          </a>
+          <a href='www.linkedin.com/in/vincent-ayn-de-castro'>
+            <LinkedIn />
+          </a>
+          <a href='https://docs.google.com/document/d/1DoJQkl_gpjpiaeJ6ffkASGNF2vJeBXxHCzg2WfpS6nw/edit?usp=sharing'>
+            <Description />
+          </a>
         </Grid>
         <Grid item xs={2} />
       </Grid>
