@@ -1,44 +1,74 @@
 import React from 'react';
-import { makeStyles, Grid } from '@material-ui/core';
+import profile from '../../wallpaper/profile_temp.jpg';
+import { makeStyles, Grid, Typography, Avatar } from '@material-ui/core';
 import { GitHub, LinkedIn, Description } from '@material-ui/icons';
 
 const useStyle = makeStyles((theme) => ({
-  container: {
-    background: 'black',
-    color: 'white',
+  root: {
     textAlign: 'center',
-    border: 'solid blue',
     overflow: 'hidden',
     height: '100vh',
+    color: '#ffe0b2',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    padding: 0,
   },
   mainGrid: {
     marginLeft: 'auto',
     marginRight: 'auto',
-    border: 'solid red',
+  },
+  atag: {
+    margin: theme.spacing(5),
+    color: 'white',
+    '&:visited': {
+      color: 'white',
+    },
+  },
+  image: {
+    width: theme.spacing(35),
+    height: theme.spacing(35),
+    alignSelf: 'center',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: theme.spacing(20),
   },
 }));
 
 const About = () => {
   const classes = useStyle();
   return (
-    <Grid container className={classes.container} id='about'>
+    <Grid container className={classes.root} id='about'>
       <Grid item xs={12} sm={10} className={classes.mainGrid}>
-        <h1 className='name'>About Me</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-          voluptatum vel quod voluptates nesciunt quae earum possimus minus
-          libero ea! Magnam, omnis quo vero iure molestias eius incidunt
-          asperiores nihil?
-        </p>
-        <h3>Skills</h3>
-
-        <a href='https://github.com/ayndecastro'>
+        <Avatar src={profile} className={classes.image} />
+      </Grid>
+      <Grid item xs={12} sm={10} className={classes.mainGrid}>
+        <Typography variant='h4'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum
+          repellendus id atque sed, aut ipsa magnam fugit modi quidem odit sunt
+          dolores itaque debitis.
+        </Typography>
+      </Grid>
+      <Grid item xs={12} sm={10} className={classes.mainGrid}>
+        <Typography variant='h5'>JAVASCRIPT | PYTHON | HTML/CSS </Typography>
+        <Typography variant='subtitle1'>
+          NodeJS | React | MongoDB | MySQL | ReactJS | Express | Mongoose |
+          Sequelize
+        </Typography>
+      </Grid>
+      <Grid item xs={12} sm={10} className={classes.mainGrid}>
+        <a href='https://github.com/ayndecastro' className={classes.atag}>
           <GitHub />
         </a>
-        <a href='www.linkedin.com/in/vincent-ayn-de-castro'>
+        <a
+          href='https://linkedin.com/in/vincent-ayn-de-castro'
+          className={classes.atag}
+        >
           <LinkedIn />
         </a>
-        <a href='https://docs.google.com/document/d/1DoJQkl_gpjpiaeJ6ffkASGNF2vJeBXxHCzg2WfpS6nw/edit?usp=sharing'>
+        <a
+          href='https://docs.google.com/document/d/1DoJQkl_gpjpiaeJ6ffkASGNF2vJeBXxHCzg2WfpS6nw/edit?usp=sharing'
+          className={classes.atag}
+        >
           <Description />
         </a>
       </Grid>

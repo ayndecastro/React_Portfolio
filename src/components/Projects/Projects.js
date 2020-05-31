@@ -22,6 +22,9 @@ const useStyle = makeStyles((theme) => ({
     border: 'solid pink',
     paddingTop: theme.spacing(8),
   },
+  card: {
+    margin: theme.spacing(2),
+  },
 }));
 
 const Projects = () => {
@@ -37,12 +40,13 @@ const Projects = () => {
       {ProjectList.map((project) => (
         <Grid item xs={12}>
           <Project
+            className={classes.card}
             app={project.app}
             description={project.description}
             image={project.image}
             Github={project.Github}
-            name={project.name}
-            techStack={project.techStack.join(' ')}
+            name={project.name.toUpperCase()}
+            techStack={project.techStack.join(' | ')}
           />
         </Grid>
       ))}

@@ -11,9 +11,6 @@ function App() {
       <Header />
       <Grid container direction='column'>
         <Grid item xs={12}>
-          <Home />
-        </Grid>
-        <Grid item xs={12}>
           <About />
         </Grid>
         <Grid item xs={12}>

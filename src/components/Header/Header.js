@@ -4,18 +4,25 @@ import { Link } from 'react-scroll';
 
 const useStyle = makeStyles({
   root: {
-    // background: 'linear-gradient(45deg, #ffcccb  30%, #B73E02 90%)',
-    background: 'black',
+    backgroundColor: 'hsla(0, 0%, 0%, 0.6)',
+    height: '50px',
     textAlign: 'center',
-    padding: '10px',
     position: 'fixed',
     width: '100%',
     overflow: 'hidden',
     zIndex: 100000,
-    border: 'solid green',
+    // border: 'solid green',
   },
-  text: {
-    color: 'white',
+  button: {
+    color: '#ffe0b2',
+    width: '70%',
+    // border: 'solid red',
+    fontWeight: 'bold',
+    transition: '0.5s',
+    alignSelf: 'center',
+    '&:hover': {
+      textDecoration: 'underline',
+    },
   },
 });
 
@@ -24,7 +31,7 @@ const Header = () => {
   return (
     <div className={classes.root}>
       <Grid container>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <Link
             to='about'
             activeClass='active'
@@ -33,22 +40,13 @@ const Header = () => {
             offset={-70}
             duration={500}
           >
-            <Button className={classes.text}>ABOUT ME</Button>
+            <Button size='large' className={classes.button}>
+              ABOUT ME
+            </Button>
           </Link>
         </Grid>
-        <Grid item xs={4}>
-          <Link
-            to='home'
-            activeClass='active'
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            <Button className={classes.text}>HOME</Button>
-          </Link>
-        </Grid>
-        <Grid item xs={4}>
+
+        <Grid item xs={6}>
           <Link
             to='projects'
             activeClass='active'
@@ -57,7 +55,9 @@ const Header = () => {
             offset={-70}
             duration={500}
           >
-            <Button className={classes.text}>PROJECTS</Button>
+            <Button size='large' className={classes.button}>
+              PROJECTS
+            </Button>
           </Link>
         </Grid>
       </Grid>

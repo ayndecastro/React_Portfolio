@@ -9,6 +9,8 @@ import {
   CardContent,
   CardActions,
   Typography,
+  createMuiTheme,
+  ThemeProvider,
 } from '@material-ui/core';
 import { GitHub, Web } from '@material-ui/icons';
 
@@ -21,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '80%',
     transition: '0.5s',
     '&:hover': {
-      transform: 'scale(1.1)',
+      transform: 'scale(1.02)',
     },
 
     '@media (max-width:1024px)': {
@@ -36,14 +38,13 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(5),
   },
   subContainer: {
-    background: 'grey',
+    backgroundColor: '#ffe0b2',
   },
-  paperCard: {
-    '&:hover': {
-      elevation: 24,
-    },
-    stack: {
-      background: 'red',
+
+  atag: {
+    color: 'white',
+    '&:visited': {
+      color: 'white',
     },
   },
 }));
@@ -55,17 +56,19 @@ const Project = ({ app, description, image, Github, name, techStack }) => {
     <Box className={classes.mainContainer}>
       <Paper elevation={24}>
         <Card className={classes.subContainer}>
-          <CardHeader title={name} subheader={techStack} />
+          <CardHeader title={name} className={classes.title} />
           <CardMedia className={classes.media} image={image} title={name} />
           <CardContent>
             <Typography>{description}</Typography>
+            <br />
+            <Typography>{techStack}</Typography>
           </CardContent>
           <CardActions>
-            <a href={Github}>
+            <a href={Github} className={classes.atag}>
               <GitHub />
             </a>
             {app ? (
-              <a href={app}>
+              <a href={app} className={classes.atag}>
                 <Web />
               </a>
             ) : (
