@@ -5,7 +5,6 @@ import Project from './Project';
 
 const useStyle = makeStyles((theme) => ({
   root: {
-    justifyContent: 'center',
     alignItems: 'center',
     textAlign: 'center',
     margin: 0,
@@ -23,22 +22,30 @@ const useStyle = makeStyles((theme) => ({
     border: 'solid pink',
     paddingTop: theme.spacing(8),
   },
-  subContainerOne: {
-    border: 'solid red',
-    height: '60vh',
-  },
-  subContainerTwo: {
-    border: 'solid red',
-    background: 'grey',
-    height: '60vh',
-  },
 }));
 
 const Projects = () => {
   const classes = useStyle();
   return (
-    <Grid container spacing={3} className={classes.root} id='projects'>
-      <Project />
+    <Grid
+      container
+      direction='column'
+      spacing={3}
+      className={classes.root}
+      id='projects'
+    >
+      {ProjectList.map((project) => (
+        <Grid item xs={12}>
+          <Project
+            app={project.app}
+            description={project.description}
+            image={project.image}
+            Github={project.Github}
+            name={project.name}
+            techStack={project.techStack.join(' ')}
+          />
+        </Grid>
+      ))}
     </Grid>
   );
 };

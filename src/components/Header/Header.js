@@ -7,7 +7,7 @@ const useStyle = makeStyles({
     // background: 'linear-gradient(45deg, #ffcccb  30%, #B73E02 90%)',
     background: 'black',
     textAlign: 'center',
-    padding: '20px',
+    padding: '10px',
     position: 'fixed',
     width: '100%',
     overflow: 'hidden',
@@ -24,8 +24,7 @@ const Header = () => {
   return (
     <div className={classes.root}>
       <Grid container>
-        <Grid item xs={3} />
-        <Grid item xs={2}>
+        <Grid item xs={4}>
           <Link
             to='about'
             activeClass='active'
@@ -37,7 +36,7 @@ const Header = () => {
             <Button className={classes.text}>ABOUT ME</Button>
           </Link>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={4}>
           <Link
             to='home'
             activeClass='active'
@@ -49,7 +48,7 @@ const Header = () => {
             <Button className={classes.text}>HOME</Button>
           </Link>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={4}>
           <Link
             to='projects'
             activeClass='active'
@@ -61,7 +60,6 @@ const Header = () => {
             <Button className={classes.text}>PROJECTS</Button>
           </Link>
         </Grid>
-        <Grid item xs={3} />
       </Grid>
     </div>
   );

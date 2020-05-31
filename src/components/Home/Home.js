@@ -7,7 +7,8 @@ const useStyle = makeStyles((theme) => ({
     background: 'grey',
     border: 'solid yellow',
     height: '100vh',
-    margin: 0,
+    marginLeft: 'auto',
+    marginRight: 'auto',
     padding: 0,
     overflow: 'hidden',
   },
@@ -27,11 +28,9 @@ const Home = () => {
   return (
     <div className={classes.container} id='home'>
       <Grid container spacing={3}>
-        <Grid item xs={2} />
-        <Grid item xs={8} className={classes.container}>
+        <Grid item sm={10} xs={12} className={classes.container}>
           <Avatar src={profile} className={classes.image} />
         </Grid>
-        <Grid item xs={2} />
       </Grid>
     </div>
   );
