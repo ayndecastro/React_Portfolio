@@ -19,10 +19,8 @@ const useStyle = makeStyles((theme) => ({
   },
   atag: {
     margin: theme.spacing(5),
-    color: 'white',
-    '&:visited': {
-      color: 'white',
-    },
+    color: '#333333',
+    '&:visited': { color: '#333333' },
   },
   image: {
     width: theme.spacing(35),
@@ -32,6 +30,18 @@ const useStyle = makeStyles((theme) => ({
     marginRight: 'auto',
     marginTop: theme.spacing(20),
   },
+  name: {
+    fontFamily: 'Kaushan Script, cursive',
+    margin: theme.spacing(2),
+  },
+  greeting: {
+    fontFamily: 'times new roman',
+  },
+  skills: {
+    color: '#333333',
+    fontFamily: 'times new roman',
+    fontWeight: 'bold',
+  },
 }));
 
 const About = () => {
@@ -40,17 +50,22 @@ const About = () => {
     <Grid container className={classes.root} id='about'>
       <Grid item xs={12} sm={10} className={classes.mainGrid}>
         <Avatar src={profile} className={classes.image} />
+        <Typography variant='h2' className={classes.name}>
+          Ayn de Castro
+        </Typography>
       </Grid>
       <Grid item xs={12} sm={10} className={classes.mainGrid}>
-        <Typography variant='h4'>
+        <Typography variant='h4' className={classes.greeting}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum
           repellendus id atque sed, aut ipsa magnam fugit modi quidem odit sunt
           dolores itaque debitis.
         </Typography>
       </Grid>
       <Grid item xs={12} sm={10} className={classes.mainGrid}>
-        <Typography variant='h5'>JAVASCRIPT | PYTHON | HTML/CSS </Typography>
-        <Typography variant='subtitle1'>
+        <Typography variant='h5' className={classes.skills}>
+          JAVASCRIPT | PYTHON | HTML/CSS
+        </Typography>
+        <Typography variant='subtitle1' className={classes.skills}>
           NodeJS | React | MongoDB | MySQL | ReactJS | Express | Mongoose |
           Sequelize
         </Typography>

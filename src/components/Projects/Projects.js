@@ -19,11 +19,13 @@ const useStyle = makeStyles((theme) => ({
   },
   text: {
     textAlign: 'left',
-    border: 'solid pink',
     paddingTop: theme.spacing(8),
   },
   card: {
     margin: theme.spacing(2),
+  },
+  cardContainer: {
+    width: '100%',
   },
 }));
 
@@ -38,7 +40,7 @@ const Projects = () => {
       id='projects'
     >
       {ProjectList.map((project) => (
-        <Grid item xs={12}>
+        <Grid item xs={12} className={classes.cardContainer}>
           <Project
             className={classes.card}
             app={project.app}

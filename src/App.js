@@ -3,7 +3,6 @@ import Header from './components/Header/Header';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import { Grid } from '@material-ui/core';
-import Home from './components/Home/Home.js';
 
 function App() {
   return (

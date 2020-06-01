@@ -11,12 +11,11 @@ const useStyle = makeStyles({
     width: '100%',
     overflow: 'hidden',
     zIndex: 100000,
-    // border: 'solid green',
   },
   button: {
     color: '#ffe0b2',
     width: '70%',
-    // border: 'solid red',
+    fontFamily: 'times new roman',
     fontWeight: 'bold',
     transition: '0.5s',
     alignSelf: 'center',

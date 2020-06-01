@@ -8,8 +8,7 @@ const projectList = [
     techStack: ['Python'],
     Github: 'https://github.com/ayndecastro/RPS_python.git',
     image: photo,
-    description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ratione doloribus tenetur tempora provident enim mollitia magni cupiditate minus facere corporis blanditiis, tempore dolor praesentium?',
+    description: 'Basic Rock-Paper-Scissor game with player vs PC',
   },
   {
     id: 2,
@@ -19,7 +18,7 @@ const projectList = [
     Github: 'https://github.com/ayndecastro/ben-to.git',
     image: photo,
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ratione doloribus tenetur tempora provident enim mollitia magni cupiditate minus facere corporis blanditiis, tempore dolor praesentium?',
+      'Bento is a Lunchbox Marketplace app concept that helps homecooks sell homecooked Meals',
   },
   {
     id: 3,
@@ -30,7 +29,7 @@ const projectList = [
     app: 'https://project3trip.herokuapp.com/',
     image: photo,
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ratione doloribus tenetur tempora provident enim mollitia magni cupiditate minus facere corporis blanditiis, tempore dolor praesentium?',
+      'Safe-Travels is an application that helps you budget for your next trip',
   },
   {
     id: 4,
@@ -41,7 +40,7 @@ const projectList = [
     app: 'https://bookspracticex.herokuapp.com/',
     image: photo,
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ratione doloribus tenetur tempora provident enim mollitia magni cupiditate minus facere corporis blanditiis, tempore dolor praesentium?',
+      "A simple book reading list app that lets you store books that you've already read",
   },
   {
     id: 5,
@@ -52,7 +51,7 @@ const projectList = [
     app: 'https://secret-island-76490.herokuapp.com/',
     image: photo,
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ratione doloribus tenetur tempora provident enim mollitia magni cupiditate minus facere corporis blanditiis, tempore dolor praesentium?',
+      'The Friend Finder app, Matches you with a friend based on the survey with a series of 10 questions',
   },
 ];
 
