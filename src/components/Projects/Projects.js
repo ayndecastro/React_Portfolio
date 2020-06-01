@@ -12,18 +12,6 @@ const useStyle = makeStyles((theme) => ({
     overflow: 'hidden',
     width: '100%',
   },
-  image: {
-    borderRadius: '20px',
-    width: '80%',
-    margin: theme.spacing(8),
-  },
-  text: {
-    textAlign: 'left',
-    paddingTop: theme.spacing(8),
-  },
-  card: {
-    margin: theme.spacing(2),
-  },
   cardContainer: {
     width: '100%',
   },
@@ -35,14 +23,13 @@ const Projects = () => {
     <Grid
       container
       direction='column'
-      spacing={3}
+      spacing={1}
       className={classes.root}
       id='projects'
     >
       {ProjectList.map((project) => (
         <Grid item xs={12} className={classes.cardContainer}>
           <Project
-            className={classes.card}
             app={project.app}
             description={project.description}
             image={project.image}

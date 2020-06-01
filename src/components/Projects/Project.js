@@ -25,9 +25,6 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.down('sm')]: {
       width: '100%',
-      '&:hover': {
-        transform: 'scale(1.02)',
-      },
     },
     marginLeft: 'auto',
     marginRight: 'auto',
