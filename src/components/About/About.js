@@ -1,6 +1,12 @@
 import React from 'react';
-import profile from '../../wallpaper/profile_temp.jpg';
-import { makeStyles, Grid, Typography, Avatar } from '@material-ui/core';
+import profile from '../../assets/profile_temp.jpg';
+import {
+  makeStyles,
+  Grid,
+  Typography,
+  Avatar,
+  Tooltip,
+} from '@material-ui/core';
 import { GitHub, LinkedIn, Description } from '@material-ui/icons';
 
 const useStyle = makeStyles((theme) => ({
@@ -71,21 +77,27 @@ const About = () => {
         </Typography>
       </Grid>
       <Grid item xs={12} sm={10} className={classes.mainGrid}>
-        <a href='https://github.com/ayndecastro' className={classes.atag}>
-          <GitHub />
-        </a>
-        <a
-          href='https://linkedin.com/in/vincent-ayn-de-castro'
-          className={classes.atag}
-        >
-          <LinkedIn />
-        </a>
-        <a
-          href='https://docs.google.com/document/d/1DoJQkl_gpjpiaeJ6ffkASGNF2vJeBXxHCzg2WfpS6nw/edit?usp=sharing'
-          className={classes.atag}
-        >
-          <Description />
-        </a>
+        <Tooltip title='Github Profile'>
+          <a href='https://github.com/ayndecastro' className={classes.atag}>
+            <GitHub />
+          </a>
+        </Tooltip>
+        <Tooltip title='LinkedIn Account'>
+          <a
+            href='https://linkedin.com/in/vincent-ayn-de-castro'
+            className={classes.atag}
+          >
+            <LinkedIn />
+          </a>
+        </Tooltip>
+        <Tooltip title='Resume'>
+          <a
+            href='https://docs.google.com/document/d/1DoJQkl_gpjpiaeJ6ffkASGNF2vJeBXxHCzg2WfpS6nw/edit?usp=sharing'
+            className={classes.atag}
+          >
+            <Description />
+          </a>
+        </Tooltip>
       </Grid>
     </Grid>
   );

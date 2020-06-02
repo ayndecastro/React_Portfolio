@@ -8,6 +8,7 @@ import {
   CardContent,
   CardActions,
   Typography,
+  Tooltip,
 } from '@material-ui/core';
 import { GitHub, Web } from '@material-ui/icons';
 
@@ -73,13 +74,17 @@ const Project = ({ app, description, image, Github, name, techStack }) => {
           </CardContent>
           <CardActions>
             <div className={classes.linksContainer}>
-              <a href={Github} className={classes.atag}>
-                <GitHub fontSize='large' />
-              </a>
-              {app ? (
-                <a href={app} className={classes.atag}>
-                  <Web fontSize='large' />
+              <Tooltip title='Github page'>
+                <a href={Github} className={classes.atag}>
+                  <GitHub fontSize='large' />
                 </a>
+              </Tooltip>
+              {app ? (
+                <Tooltip title='App Website'>
+                  <a href={app} className={classes.atag}>
+                    <Web fontSize='large' />
+                  </a>
+                </Tooltip>
               ) : (
                 ''
               )}

@@ -1,4 +1,8 @@
-import photo from '../../wallpaper/r32.png';
+import bento from '../../assets/bento.png';
+import rps from '../../assets/RPS.png';
+import safetravels from '../../assets/SafeTravels.png';
+import books from '../../assets/Books.png';
+import FriendFinder from '../../assets/FriendFinder.png';
 
 const projectList = [
   {
@@ -7,7 +11,7 @@ const projectList = [
     name: 'RPS Game',
     techStack: ['Python'],
     Github: 'https://github.com/ayndecastro/RPS_python.git',
-    image: photo,
+    image: rps,
     description: 'Basic Rock-Paper-Scissor game with player vs PC',
   },
   {
@@ -16,7 +20,7 @@ const projectList = [
     name: 'Ben-to',
     techStack: ['NodeJS', 'MongoDB', 'React', 'Redux', 'Auth-0', 'Express'],
     Github: 'https://github.com/ayndecastro/ben-to.git',
-    image: photo,
+    image: bento,
     description:
       'Bento is a Lunchbox Marketplace app concept that helps homecooks sell homecooked Meals',
   },
@@ -27,7 +31,7 @@ const projectList = [
     techStack: ['NodeJS', 'MongoDB', 'React', 'Redux', 'Auth-0', 'Express'],
     Github: 'https://github.com/ayndecastro/project_3.git',
     app: 'https://project3trip.herokuapp.com/',
-    image: photo,
+    image: safetravels,
     description:
       'Safe-Travels is an application that helps you budget for your next trip',
   },
@@ -38,9 +42,9 @@ const projectList = [
     techStack: ['NodeJS', 'MongoDB', 'React', 'Express'],
     Github: 'https://github.com/ayndecastro/books.git',
     app: 'https://bookspracticex.herokuapp.com/',
-    image: photo,
+    image: books,
     description:
-      "A simple book reading list app that lets you store books that you've already read",
+      'A simple book reading list app that lets you track books that you want read',
   },
   {
     id: 5,
@@ -49,7 +53,7 @@ const projectList = [
     techStack: ['NodeJS', 'HTML', 'CSS', 'Express'],
     Github: 'https://github.com/ayndecastro/FriendFinder.git',
     app: 'https://secret-island-76490.herokuapp.com/',
-    image: photo,
+    image: FriendFinder,
     description:
       'The Friend Finder app, Matches you with a friend based on the survey with a series of 10 questions',
   },
