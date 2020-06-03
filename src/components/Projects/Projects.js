@@ -20,15 +20,9 @@ const useStyle = makeStyles((theme) => ({
 const Projects = () => {
   const classes = useStyle();
   return (
-    <Grid
-      container
-      direction='column'
-      spacing={1}
-      className={classes.root}
-      id='projects'
-    >
+    <Grid container spacing={1} className={classes.root} id='projects'>
       {ProjectList.map((project) => (
-        <Grid item xs={12} className={classes.cardContainer}>
+        <Grid item lg={6} sm={12} className={classes.cardContainer}>
           <Project
             app={project.app}
             description={project.description}

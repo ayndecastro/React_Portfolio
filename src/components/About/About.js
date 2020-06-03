@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../../assets/profile_temp.jpg';
+import profile from '../../assets/profile.JPG';
 import {
   makeStyles,
   Grid,
@@ -25,8 +25,7 @@ const useStyle = makeStyles((theme) => ({
   },
   atag: {
     margin: theme.spacing(5),
-    color: '#333333',
-    '&:visited': { color: '#333333' },
+    '&:visited': { color: '#ffe0b2' },
   },
   image: {
     width: theme.spacing(35),
@@ -38,14 +37,13 @@ const useStyle = makeStyles((theme) => ({
   },
   name: {
     fontFamily: 'Kaushan Script, cursive',
+    color: '#333333',
     margin: theme.spacing(2),
   },
   greeting: {
-    fontFamily: 'times new roman',
+    fontWeight: 'bold',
   },
   skills: {
-    color: '#333333',
-    fontFamily: 'times new roman',
     fontWeight: 'bold',
   },
 }));
@@ -62,9 +60,8 @@ const About = () => {
       </Grid>
       <Grid item xs={12} sm={10} className={classes.mainGrid}>
         <Typography variant='h4' className={classes.greeting}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum
-          repellendus id atque sed, aut ipsa magnam fugit modi quidem odit sunt
-          dolores itaque debitis.
+          I am a Software Developer passionate about building and learning new
+          things.
         </Typography>
       </Grid>
       <Grid item xs={12} sm={10} className={classes.mainGrid}>

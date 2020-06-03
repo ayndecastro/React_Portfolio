@@ -9,6 +9,7 @@ import {
   CardActions,
   Typography,
   Tooltip,
+  CardHeader,
 } from '@material-ui/core';
 import { GitHub, Web } from '@material-ui/icons';
 
@@ -18,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: '56.25%', // 16:9
   },
   mainContainer: {
-    width: '50%',
+    width: '60%',
     transition: '0.5s',
     '&:hover': {
       transform: 'scale(1.02)',
@@ -49,9 +50,10 @@ const useStyles = makeStyles((theme) => ({
   title: {
     color: '#333333',
     fontWeight: 'bold',
-    fontFamily: 'times new roman',
+    margin: theme.spacing(2),
   },
-  text: { color: '#333333', fontWeight: 'bold', fontFamily: 'times new roman' },
+  text: { color: '#333333', fontWeight: 'bold', margin: theme.spacing(1) },
+  techStack: { color: '#333333', fontWeight: 'bold', margin: theme.spacing(2) },
 }));
 
 const Project = ({ app, description, image, Github, name, techStack }) => {
@@ -66,11 +68,10 @@ const Project = ({ app, description, image, Github, name, techStack }) => {
             <Typography variant='h4' className={classes.title}>
               {name}
             </Typography>
-            <Typography variant='subtitle1' className={classes.text}>
+            <Typography variant='subtitle2' className={classes.text}>
               {description}
             </Typography>
-            <br />
-            <Typography className={classes.text}>{techStack}</Typography>
+            <Typography className={classes.techStack}>{techStack}</Typography>
           </CardContent>
           <CardActions>
             <div className={classes.linksContainer}>

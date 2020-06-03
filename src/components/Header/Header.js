@@ -15,7 +15,7 @@ const useStyle = makeStyles({
   button: {
     color: '#ffe0b2',
     width: '70%',
-    fontFamily: 'times new roman',
+    // fontFamily: 'times new roman',
     fontWeight: 'bold',
     transition: '0.5s',
     alignSelf: 'center',
