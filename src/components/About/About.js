@@ -18,6 +18,7 @@ const useStyle = makeStyles((theme) => ({
     marginLeft: 'auto',
     marginRight: 'auto',
     padding: 0,
+    marginBottom: theme.spacing(5),
   },
   mainGrid: {
     marginLeft: 'auto',
@@ -55,7 +56,7 @@ const About = () => {
     <Grid container className={classes.root} id='about'>
       <Grid item xs={12} sm={10} className={classes.mainGrid}>
         <Avatar src={profile} className={classes.image} />
-        <Typography variant='h1' className={classes.name}>
+        <Typography variant='h2' className={classes.name}>
           Ayn de Castro
         </Typography>
       </Grid>

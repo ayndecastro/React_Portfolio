@@ -9,7 +9,6 @@ import {
   CardActions,
   Typography,
   Tooltip,
-  CardHeader,
 } from '@material-ui/core';
 import { GitHub, Web } from '@material-ui/icons';
 

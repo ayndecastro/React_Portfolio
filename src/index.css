@@ -10,18 +10,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body:before {
-  content: '';
-  display: block;
-  position: fixed;
-
-  background: url('./assets/wallpaper.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
