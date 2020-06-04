@@ -11,7 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #ci-hero-11 .widget-wrap,
   #ci-hero-12 .widget-wrap {
     background-image: linear-gradient(
