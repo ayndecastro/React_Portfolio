@@ -11,11 +11,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #ci-hero-11 .widget-wrap,
   #ci-hero-12 .widget-wrap {
-    background-attachment: initial;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(
+      to bottom,
+      #000000,
+      #240c11,
+      #400d18,
+      #5d081a,
+      #790217,
+      #8e1116,
+      #a22111,
+      #b53107,
+      #c64906,
+      #d65f04,
+      #e67604,
+      #f48c06
+    );
   }
 }
 
