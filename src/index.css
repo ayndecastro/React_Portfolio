@@ -11,6 +11,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (max-width: 767px) {
+  #ci-hero-11 .widget-wrap,
+  #ci-hero-12 .widget-wrap {
+    background-attachment: initial;
+    background-repeat: no-repeat;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
