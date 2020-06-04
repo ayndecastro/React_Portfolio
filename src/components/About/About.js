@@ -24,6 +24,7 @@ const useStyle = makeStyles((theme) => ({
     marginRight: 'auto',
   },
   atag: {
+    color: '#ffe0b2',
     margin: theme.spacing(5),
     '&:visited': { color: '#ffe0b2' },
   },
@@ -33,7 +34,7 @@ const useStyle = makeStyles((theme) => ({
     alignSelf: 'center',
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginTop: theme.spacing(20),
+    marginTop: theme.spacing(15),
   },
   name: {
     fontFamily: 'Kaushan Script, cursive',
@@ -54,7 +55,7 @@ const About = () => {
     <Grid container className={classes.root} id='about'>
       <Grid item xs={12} sm={10} className={classes.mainGrid}>
         <Avatar src={profile} className={classes.image} />
-        <Typography variant='h2' className={classes.name}>
+        <Typography variant='h1' className={classes.name}>
           Ayn de Castro
         </Typography>
       </Grid>
