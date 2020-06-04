@@ -9,6 +9,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@media (max-width: 768px) {
+  #ci-hero-11 .widget-wrap,
+  #ci-hero-12 .widget-wrap {
+    background-attachment: initial;
+  }
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
