@@ -1,13 +1,16 @@
-import React from 'react';
-import profile from '../../assets/profile.JPG';
+import React from './node_modules/react';
+import profile from '../../wallpaper/profile_temp.jpg';
 import {
   makeStyles,
   Grid,
   Typography,
   Avatar,
-  Tooltip,
-} from '@material-ui/core';
-import { GitHub, LinkedIn, Description } from '@material-ui/icons';
+} from './node_modules/@material-ui/core';
+import {
+  GitHub,
+  LinkedIn,
+  Description,
+} from './node_modules/@material-ui/icons';
 
 const useStyle = makeStyles((theme) => ({
   root: {
@@ -18,16 +21,15 @@ const useStyle = makeStyles((theme) => ({
     marginLeft: 'auto',
     marginRight: 'auto',
     padding: 0,
-    marginBottom: theme.spacing(5),
   },
   mainGrid: {
     marginLeft: 'auto',
     marginRight: 'auto',
   },
   atag: {
-    color: '#ffe0b2',
     margin: theme.spacing(5),
-    '&:visited': { color: '#ffe0b2' },
+    color: '#333333',
+    '&:visited': { color: '#333333' },
   },
   image: {
     width: theme.spacing(35),
@@ -35,17 +37,18 @@ const useStyle = makeStyles((theme) => ({
     alignSelf: 'center',
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginTop: theme.spacing(15),
+    marginTop: theme.spacing(20),
   },
   name: {
     fontFamily: 'Kaushan Script, cursive',
-    color: '#333333',
     margin: theme.spacing(2),
   },
   greeting: {
-    fontWeight: 'bold',
+    fontFamily: 'times new roman',
   },
   skills: {
+    color: '#333333',
+    fontFamily: 'times new roman',
     fontWeight: 'bold',
   },
 }));
@@ -62,8 +65,9 @@ const About = () => {
       </Grid>
       <Grid item xs={12} sm={10} className={classes.mainGrid}>
         <Typography variant='h4' className={classes.greeting}>
-          I am a Software Developer passionate about building and learning new
-          things.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorum
+          repellendus id atque sed, aut ipsa magnam fugit modi quidem odit sunt
+          dolores itaque debitis.
         </Typography>
       </Grid>
       <Grid item xs={12} sm={10} className={classes.mainGrid}>
@@ -71,32 +75,26 @@ const About = () => {
           JAVASCRIPT | PYTHON | HTML/CSS
         </Typography>
         <Typography variant='subtitle1' className={classes.skills}>
-          NodeJS | MongoDB | MySQL | ReactJS | Express | Mongoose | Sequelize |
-          Redux
+          NodeJS | React | MongoDB | MySQL | ReactJS | Express | Mongoose |
+          Sequelize
         </Typography>
       </Grid>
       <Grid item xs={12} sm={10} className={classes.mainGrid}>
-        <Tooltip title='Github Profile'>
-          <a href='https://github.com/ayndecastro' className={classes.atag}>
-            <GitHub />
-          </a>
-        </Tooltip>
-        <Tooltip title='LinkedIn Account'>
-          <a
-            href='https://linkedin.com/in/vincent-ayn-de-castro'
-            className={classes.atag}
-          >
-            <LinkedIn />
-          </a>
-        </Tooltip>
-        <Tooltip title='Resume'>
-          <a
-            href='https://docs.google.com/document/d/1DoJQkl_gpjpiaeJ6ffkASGNF2vJeBXxHCzg2WfpS6nw/edit?usp=sharing'
-            className={classes.atag}
-          >
-            <Description />
-          </a>
-        </Tooltip>
+        <a href='https://github.com/ayndecastro' className={classes.atag}>
+          <GitHub />
+        </a>
+        <a
+          href='https://linkedin.com/in/vincent-ayn-de-castro'
+          className={classes.atag}
+        >
+          <LinkedIn />
+        </a>
+        <a
+          href='https://docs.google.com/document/d/1DoJQkl_gpjpiaeJ6ffkASGNF2vJeBXxHCzg2WfpS6nw/edit?usp=sharing'
+          className={classes.atag}
+        >
+          <Description />
+        </a>
       </Grid>
     </Grid>
   );
