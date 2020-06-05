@@ -44,9 +44,11 @@ const useStyle = makeStyles((theme) => ({
   },
   greeting: {
     fontWeight: 'bold',
+    margin: theme.spacing(2),
   },
   skills: {
     fontWeight: 'bold',
+    margin: theme.spacing(2),
   },
 }));
 
