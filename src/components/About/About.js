@@ -48,6 +48,9 @@ const useStyle = makeStyles((theme) => ({
   greeting: {
     fontWeight: 'bold',
     margin: theme.spacing(2),
+    [theme.breakpoints.down('sm')]: {
+      color: '#333333',
+    },
   },
   skills: {
     fontWeight: 'bold',
