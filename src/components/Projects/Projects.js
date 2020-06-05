@@ -11,6 +11,7 @@ const useStyle = makeStyles((theme) => ({
     padding: 0,
     overflow: 'hidden',
     width: '100%',
+    background: '#2D112A',
   },
   cardContainer: {
     width: '100%',

@@ -13,7 +13,7 @@ const useStyle = makeStyles({
     zIndex: 100000,
   },
   button: {
-    color: '#ffe0b2',
+    color: '#FFDCC8',
     width: '70%',
     // fontFamily: 'times new roman',
     fontWeight: 'bold',

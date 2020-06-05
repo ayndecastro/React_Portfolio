@@ -14,7 +14,7 @@ const useStyle = makeStyles((theme) => ({
     textAlign: 'center',
     overflow: 'hidden',
     height: '100vh',
-    color: '#ffe0b2',
+    color: '#FFDCC8',
     marginLeft: 'auto',
     marginRight: 'auto',
     padding: 0,
@@ -25,9 +25,9 @@ const useStyle = makeStyles((theme) => ({
     marginRight: 'auto',
   },
   atag: {
-    color: '#ffe0b2',
+    color: '#FFDCC8',
     margin: theme.spacing(5),
-    '&:visited': { color: '#ffe0b2' },
+    '&:visited': { color: '#FFDCC8' },
   },
   image: {
     width: theme.spacing(35),
