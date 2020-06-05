@@ -36,6 +36,9 @@ const useStyle = makeStyles((theme) => ({
     marginLeft: 'auto',
     marginRight: 'auto',
     marginTop: theme.spacing(15),
+    [theme.breakpoints.down('sm')]: {
+      marginTop: theme.spacing(3),
+    },
   },
   name: {
     fontFamily: 'Kaushan Script, cursive',
