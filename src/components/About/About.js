@@ -47,6 +47,9 @@ const useStyle = makeStyles((theme) => ({
     fontFamily: 'Kaushan Script, cursive',
     color: '#333333',
     margin: theme.spacing(2),
+    [theme.breakpoints.down('sm')]: {
+      margin: theme.spacing(0),
+    },
   },
   greeting: {
     fontWeight: 'bold',
@@ -54,7 +57,7 @@ const useStyle = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       color: '#333333',
       fontSize: '1.2rem',
-      margin: theme.spacing(1),
+      margin: theme.spacing(0),
     },
   },
   skills: {
@@ -63,7 +66,7 @@ const useStyle = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       color: '#333333',
       fontSize: '1.2rem',
-      margin: theme.spacing(1),
+      margin: theme.spacing(0),
     },
   },
 }));
