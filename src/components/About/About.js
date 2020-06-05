@@ -36,6 +36,7 @@ const useStyle = makeStyles((theme) => ({
     marginLeft: 'auto',
     marginRight: 'auto',
     marginTop: theme.spacing(15),
+
     [theme.breakpoints.down('sm')]: {
       marginTop: theme.spacing(3),
       width: theme.spacing(25),
@@ -52,11 +53,18 @@ const useStyle = makeStyles((theme) => ({
     margin: theme.spacing(2),
     [theme.breakpoints.down('sm')]: {
       color: '#333333',
+      fontSize: '1.2rem',
+      margin: theme.spacing(1),
     },
   },
   skills: {
     fontWeight: 'bold',
     margin: theme.spacing(2),
+    [theme.breakpoints.down('sm')]: {
+      color: '#333333',
+      fontSize: '1.2rem',
+      margin: theme.spacing(1),
+    },
   },
 }));
 
