@@ -35,9 +35,6 @@ const useStyle = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       marginTop: theme.spacing(4),
     },
-    [theme.breakpoints.down('xs')]: {
-      marginTop: theme.spacing(1),
-    },
   },
   greetingsGrid: {
     marginLeft: 'auto',
@@ -82,11 +79,6 @@ const useStyle = makeStyles((theme) => ({
       width: theme.spacing(20),
       height: theme.spacing(20),
     },
-    [theme.breakpoints.down('xs')]: {
-      marginTop: theme.spacing(7),
-      width: theme.spacing(18),
-      height: theme.spacing(18),
-    },
   },
   name: {
     fontFamily: 'Kaushan Script, cursive',
@@ -103,9 +95,6 @@ const useStyle = makeStyles((theme) => ({
       fontSize: '1.2rem',
       margin: theme.spacing(0),
     },
-    [theme.breakpoints.down('xs')]: {
-      fontSize: '1rem',
-    },
   },
   skills: {
     fontWeight: 'bold',
@@ -114,9 +103,6 @@ const useStyle = makeStyles((theme) => ({
       color: '#333333',
       fontSize: '1rem',
       margin: theme.spacing(0),
-    },
-    [theme.breakpoints.down('xs')]: {
-      fontSize: '0.7rem',
     },
   },
 }));
@@ -130,7 +116,7 @@ const About = () => {
       </Grid>
       <Grid item xs={12} sm={10} className={classes.nameGrid}>
         {' '}
-        <Typography variant='h2' className={classes.name}>
+        <Typography variant='h1' className={classes.name}>
           Ayn de Castro
         </Typography>
       </Grid>
