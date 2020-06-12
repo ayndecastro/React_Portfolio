@@ -25,14 +25,14 @@ const useStyle = makeStyles((theme) => ({
     marginRight: 'auto',
     [theme.breakpoints.down('sm')]: {
       padding: 0,
+      border: 'solid blue',
     },
   },
   nameGrid: {
-    margin: theme.spacing(2),
     marginLeft: 'auto',
     marginRight: 'auto',
     [theme.breakpoints.down('sm')]: {
-      marginTop: theme.spacing(4),
+      border: 'solid blue',
     },
   },
   greetingsGrid: {
@@ -40,7 +40,7 @@ const useStyle = makeStyles((theme) => ({
     marginRight: 'auto',
     [theme.breakpoints.down('sm')]: {
       padding: 0,
-      marginTop: theme.spacing(1),
+      border: 'solid blue',
     },
   },
   skillsGrid: {
@@ -48,7 +48,7 @@ const useStyle = makeStyles((theme) => ({
     marginRight: 'auto',
     [theme.breakpoints.down('sm')]: {
       padding: 0,
-      margin: theme.spacing(1),
+      border: 'solid blue',
     },
   },
   linksGrid: {
@@ -56,6 +56,7 @@ const useStyle = makeStyles((theme) => ({
     marginRight: 'auto',
     [theme.breakpoints.down('sm')]: {
       padding: 0,
+      border: 'solid blue',
     },
   },
   atag: {
@@ -69,7 +70,7 @@ const useStyle = makeStyles((theme) => ({
     alignSelf: 'center',
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginTop: theme.spacing(15),
+    marginTop: theme.spacing(10),
 
     [theme.breakpoints.down('sm')]: {
       marginTop: theme.spacing(8),
