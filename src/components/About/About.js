@@ -25,7 +25,6 @@ const useStyle = makeStyles((theme) => ({
     marginRight: 'auto',
     [theme.breakpoints.down('sm')]: {
       padding: 0,
-      height: '30%',
     },
   },
   nameGrid: {
@@ -49,7 +48,6 @@ const useStyle = makeStyles((theme) => ({
     marginRight: 'auto',
     [theme.breakpoints.down('sm')]: {
       padding: 0,
-      height: '10%',
       margin: theme.spacing(1),
     },
   },
@@ -58,7 +56,6 @@ const useStyle = makeStyles((theme) => ({
     marginRight: 'auto',
     [theme.breakpoints.down('sm')]: {
       padding: 0,
-      height: '10%',
     },
   },
   atag: {
@@ -160,6 +157,7 @@ const About = () => {
           </a>
         </Tooltip>
       </Grid>
+      <Grid item xs={12} sm={10} className={classes.linksGrid} />
     </Grid>
   );
 };
