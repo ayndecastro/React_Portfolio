@@ -23,6 +23,9 @@ const useStyle = makeStyles((theme) => ({
   mainGrid: {
     marginLeft: 'auto',
     marginRight: 'auto',
+    [theme.breakpoints.down('sm')]: {
+      border: 'solid blue',
+    },
   },
   atag: {
     color: '#FFDCC8',
@@ -48,7 +51,7 @@ const useStyle = makeStyles((theme) => ({
     color: '#333333',
     margin: theme.spacing(2),
     [theme.breakpoints.down('sm')]: {
-      margin: theme.spacing(0),
+      marginTop: theme.spacing(2),
     },
   },
   greeting: {
