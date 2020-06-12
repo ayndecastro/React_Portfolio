@@ -28,12 +28,18 @@ const useStyle = makeStyles((theme) => ({
       height: '30%',
     },
   },
+  nameGrid: {
+    margin: theme.spacing(2),
+    [theme.breakpoints.down('sm')]: {
+      marginTop: theme.spacing(4),
+    },
+  },
   greetingsGrid: {
     marginLeft: 'auto',
     marginRight: 'auto',
     [theme.breakpoints.down('sm')]: {
       padding: 0,
-      marginTop: theme.spacing(4),
+      marginTop: theme.spacing(1),
     },
   },
   skillsGrid: {
@@ -42,7 +48,7 @@ const useStyle = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       padding: 0,
       height: '10%',
-      marginBottom: theme.spacing(1),
+      margin: theme.spacing(1),
     },
   },
   linksGrid: {
@@ -75,10 +81,6 @@ const useStyle = makeStyles((theme) => ({
   name: {
     fontFamily: 'Kaushan Script, cursive',
     color: '#333333',
-    margin: theme.spacing(2),
-    [theme.breakpoints.down('sm')]: {
-      marginTop: theme.spacing(2),
-    },
   },
   greeting: {
     fontWeight: 'bold',
@@ -94,7 +96,7 @@ const useStyle = makeStyles((theme) => ({
     margin: theme.spacing(2),
     [theme.breakpoints.down('sm')]: {
       color: '#333333',
-      fontSize: '1.2rem',
+      fontSize: '1rem',
       margin: theme.spacing(0),
     },
   },
@@ -106,6 +108,9 @@ const About = () => {
     <Grid container className={classes.root} id='about'>
       <Grid item xs={12} sm={10} className={classes.firstGrid}>
         <Avatar src={profile} className={classes.image} />
+      </Grid>
+      <Grid item xs={12} sm={10} className={classes.nameGrid}>
+        {' '}
         <Typography variant='h2' className={classes.name}>
           Ayn de Castro
         </Typography>
