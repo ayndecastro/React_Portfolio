@@ -30,6 +30,8 @@ const useStyle = makeStyles((theme) => ({
   },
   nameGrid: {
     margin: theme.spacing(2),
+    marginLeft: 'auto',
+    marginRight: 'auto',
     [theme.breakpoints.down('sm')]: {
       marginTop: theme.spacing(4),
     },
