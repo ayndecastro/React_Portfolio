@@ -24,7 +24,7 @@ const useStyle = makeStyles((theme) => ({
     marginLeft: 'auto',
     marginRight: 'auto',
     [theme.breakpoints.down('sm')]: {
-      border: 'solid blue',
+      // border: 'solid blue',
     },
   },
   atag: {
