@@ -11,7 +11,7 @@ const projectList = [
     name: 'RPS Game',
     techStack: ['Python'],
     Github: 'https://github.com/ayndecastro/RPS_python.git',
-    image: rps,
+    image: rps ? rps : '#',
     description: 'Basic Rock-Paper-Scissor game with player vs PC',
   },
   {
@@ -20,7 +20,7 @@ const projectList = [
     name: 'Ben-to',
     techStack: ['NodeJS', 'MongoDB', 'React', 'Redux', 'Auth-0', 'Express'],
     Github: 'https://github.com/ayndecastro/ben-to.git',
-    image: bento,
+    image: bento ? bento : '#',
     description:
       'Bento is a Lunchbox Marketplace app concept that helps homecooks sell homecooked Meals',
   },
@@ -31,7 +31,7 @@ const projectList = [
     techStack: ['NodeJS', 'MongoDB', 'React', 'Redux', 'Auth-0', 'Express'],
     Github: 'https://github.com/ayndecastro/project_3.git',
     app: 'https://project3trip.herokuapp.com/',
-    image: safetravels,
+    image: safetravels ? safetravels : '#',
     description:
       'Safe-Travels is an application that helps you budget for your next trip',
   },
@@ -42,7 +42,7 @@ const projectList = [
     techStack: ['NodeJS', 'MongoDB', 'React', 'Express'],
     Github: 'https://github.com/ayndecastro/books.git',
     app: 'https://bookspracticex.herokuapp.com/',
-    image: books,
+    image: books ? books : '#',
     description:
       'A simple book reading list app that lets you track books that you want read',
   },
@@ -53,7 +53,7 @@ const projectList = [
     techStack: ['NodeJS', 'HTML', 'CSS', 'Express'],
     Github: 'https://github.com/ayndecastro/FriendFinder.git',
     app: 'https://secret-island-76490.herokuapp.com/',
-    image: FriendFinder,
+    image: FriendFinder ? FriendFinder : '#',
     description:
       'The Friend Finder app, Matches you with a friend based on the survey with a series of 10 questions',
   },
