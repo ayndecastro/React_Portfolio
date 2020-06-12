@@ -20,11 +20,37 @@ const useStyle = makeStyles((theme) => ({
     padding: 0,
     marginBottom: theme.spacing(5),
   },
-  mainGrid: {
+  firstGrid: {
     marginLeft: 'auto',
     marginRight: 'auto',
     [theme.breakpoints.down('sm')]: {
-      // border: 'solid blue',
+      padding: 0,
+      height: '30%',
+    },
+  },
+  greetingsGrid: {
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    [theme.breakpoints.down('sm')]: {
+      padding: 0,
+      marginTop: theme.spacing(4),
+    },
+  },
+  skillsGrid: {
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    [theme.breakpoints.down('sm')]: {
+      padding: 0,
+      height: '10%',
+      marginBottom: theme.spacing(1),
+    },
+  },
+  linksGrid: {
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    [theme.breakpoints.down('sm')]: {
+      padding: 0,
+      height: '10%',
     },
   },
   atag: {
@@ -41,9 +67,9 @@ const useStyle = makeStyles((theme) => ({
     marginTop: theme.spacing(15),
 
     [theme.breakpoints.down('sm')]: {
-      marginTop: theme.spacing(3),
-      width: theme.spacing(25),
-      height: theme.spacing(25),
+      marginTop: theme.spacing(8),
+      width: theme.spacing(20),
+      height: theme.spacing(20),
     },
   },
   name: {
@@ -78,19 +104,19 @@ const About = () => {
   const classes = useStyle();
   return (
     <Grid container className={classes.root} id='about'>
-      <Grid item xs={12} sm={10} className={classes.mainGrid}>
+      <Grid item xs={12} sm={10} className={classes.firstGrid}>
         <Avatar src={profile} className={classes.image} />
         <Typography variant='h2' className={classes.name}>
           Ayn de Castro
         </Typography>
       </Grid>
-      <Grid item xs={12} sm={10} className={classes.mainGrid}>
+      <Grid item xs={12} sm={10} className={classes.greetingsGrid}>
         <Typography variant='h4' className={classes.greeting}>
           I am a Software Developer passionate about building and learning new
           things.
         </Typography>
       </Grid>
-      <Grid item xs={12} sm={10} className={classes.mainGrid}>
+      <Grid item xs={12} sm={10} className={classes.skillsGrid}>
         <Typography variant='h5' className={classes.skills}>
           JAVASCRIPT | PYTHON | HTML/CSS
         </Typography>
@@ -99,7 +125,7 @@ const About = () => {
           Redux
         </Typography>
       </Grid>
-      <Grid item xs={12} sm={10} className={classes.mainGrid}>
+      <Grid item xs={12} sm={10} className={classes.linksGrid}>
         <Tooltip title='Github Profile'>
           <a href='https://github.com/ayndecastro' className={classes.atag}>
             <GitHub />
