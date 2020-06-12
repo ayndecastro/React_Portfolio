@@ -112,8 +112,9 @@ const About = () => {
       </Grid>
       <Grid item xs={12} sm={10} className={classes.greetingsGrid}>
         <Typography variant='h4' className={classes.greeting}>
-          I am a Software Developer passionate about building and learning new
-          things.
+          Software Developer from Austin Texas. I am passionate about building
+          applications and learning new things, and a great team player who's
+          always looking to bring something new and interesting to the table.
         </Typography>
       </Grid>
       <Grid item xs={12} sm={10} className={classes.skillsGrid}>
